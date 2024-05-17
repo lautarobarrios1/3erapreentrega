@@ -1,0 +1,62 @@
+/*Vista tablet*/
+/*768px hasta 1023px*/
+
+@media (max-width:1023px) {
+    /*Header*/
+
+    .encabezado {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .encabezado .boton {
+        display: none;
+    }
+
+    /*Banner*/
+
+    .bannerContenido p {
+        font-size: 2.5rem;
+    }
+
+    /*Productos*/
+
+    .productos {
+        margin: 5vh;
+        font-size: 2rem;
+    }
+
+    .productos h3,
+    .productos p {
+        font-size: inherit;
+    }
+
+    .contenedorProductos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*Guias*/
+
+    .contenedorProductos {
+        flex-direction: column;
+    }
+
+    /*Footer*/
+
+    .footerContenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/*Ajustes específicos para la vista móvil*/
+/*0 hasta 768px*/
+
+@media (max-width:768px) {
+    /*Destinos */
+
+    .contenedorProductos {
+        grid-template-columns: 1fr;
+    }
+}
